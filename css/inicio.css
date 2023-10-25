@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+/*Main*/
+.contenedor1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 750px;
+}
+.contenedor1 .seccion1 {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.contenedor1 .seccion1 .encabezado{
+    color: white;
+    font-size: 4.5vw;
+    font-weight: 600;
+    line-height:4.2vw;
+    min-width: 800px;
+    flex: 1;
+    top: 0;
+}
+.wrapper{
+    height: 80px;
+}
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #ffffff;
+	font-size: 6.5vw;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
+	100% {
+		fill: rgb(255, 255, 255); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+.contenedor1 .seccion1 .encabezado .titulo{
+    font-size: 2.5vw;
+    color: var(--color-principal);
+    position: relative;
+    margin: 20px;
+    font-weight: 300;
+}
+.contenedor1 .seccion1 .encabezado .frase{
+    font-size:1.5vw;
+    color: var(--color-principal);
+    position: relative;
+    font-weight: 300;
+    -webkit-text-stroke: .2px var(--color-texto);
+}
+.contenedor1 .card {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: 1s ease;
+    border-radius: 50px;
+}
+.contenedor1 .card .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+    align-items: center;
+}
+.contenedor1 .card:hover .box {
+    transform: rotateY(180deg);
+}
+.contenedor1 .card .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+    flex: 1;
+}
+.contenedor1 .card .box .contentBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #556D73;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+.contenedor1 .card .box .contentBx div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background:
+    conic-gradient(from    0deg at calc(500%/6) calc(100%/3),var(--c3) var(--_a)),
+    conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--c2) var(--_a)),
+    conic-gradient(from  120deg at calc(100%/3) calc(500%/6),var(--c1) var(--_a)),
+    conic-gradient(from  120deg at calc(200%/3) calc(500%/6),var(--c1) var(--_a)),
+    conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_a)),
+    conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_a)),
+    conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
+    background-size: calc(var(--s)*1.732) var(--s);
+}
+.contenedor1 .card .box .contentBx div h1 {
+    color: #000000;
+    font-size: 25px;
+    -webkit-text-stroke:1px var(--color-principal);
+    letter-spacing: 1px;
+}
+.contenedor1 .card .box .contentBx div p {
+    color: var(--color-texto);
+    font-size: 16px;
+}
+@media (max-width: 1020px){
+    .contenedor1{
+        height: 600px;
+        margin-top: -30px;
+    }
+    svg text {
+        font-size: 9vw;
+    }
+    .contenedor1 .card .box{
+        min-width: 320px;
+    }
+    .contenedor1 .seccion1 .encabezado .titulo{
+        font-size: 6vw;
+    }
+    .contenedor1 .seccion1 .encabezado .frase{
+        font-size: 3vw;
+    }
+}
+@media (max-width: 799px){
+    .contenedor1 .seccion1 .encabezado{
+        min-width: 375px;
+    }
+}
