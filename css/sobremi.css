@@ -10,6 +10,7 @@
 .container2 .card2 {
     position: relative;
     align-self: flex-end;
+    text-align: center;
     width: 300px;
     margin: auto;
     height: 300px;
@@ -18,14 +19,6 @@
     display: flex;
     box-shadow: 0 5px 202px rgba(0,0,0,0,5);
     transition: 0.3s ease-in-out;
-    background:
-    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
-    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
-    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
-    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
-    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
-                        var(--c1) 0 calc(500%/6),var(--c2) 0);
-background-size: calc(1.732*var(--s)) var(--s);
 }
 .container2 .card2:hover {
     width: 95%;
@@ -46,6 +39,14 @@ background-size: calc(1.732*var(--s)) var(--s);
     height: 260px;
     border-radius: 20px;
 }
+.container2 .card2 .content2 ion-icon{
+    width: 60px;
+    height: 60px;
+}
+.container2 .card2 .content2 svg{
+    width: 60px;
+    height: 60px;
+}
 .container2 h2{
     margin-left: 20px;
     top: 0;
@@ -55,6 +56,8 @@ background-size: calc(1.732*var(--s)) var(--s);
 .container2 .card2 .imgBx2 img {
     max-width: 100%;
     border-radius: 20px;
+    object-fit: cover;
+    object-position: right;
 }
 .container2 .card2 .content2{
     width: 100%;

@@ -109,9 +109,10 @@ svg text {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #556D73;
+    background: var(--color-principal);
     backface-visibility: hidden;
     display: flex;
+    border-radius: 50px;
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
@@ -120,24 +121,14 @@ svg text {
 .contenedor1 .card .box .contentBx div {
     transform-style: preserve-3d;
     padding: 20px;
-    background:
-    conic-gradient(from    0deg at calc(500%/6) calc(100%/3),var(--c3) var(--_a)),
-    conic-gradient(from -120deg at calc(100%/6) calc(100%/3),var(--c2) var(--_a)),
-    conic-gradient(from  120deg at calc(100%/3) calc(500%/6),var(--c1) var(--_a)),
-    conic-gradient(from  120deg at calc(200%/3) calc(500%/6),var(--c1) var(--_a)),
-    conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_a)),
-    conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_a)),
-    conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
-    background-size: calc(var(--s)*1.732) var(--s);
 }
 .contenedor1 .card .box .contentBx div h1 {
     color: #000000;
     font-size: 25px;
-    -webkit-text-stroke:1px var(--color-principal);
     letter-spacing: 1px;
 }
 .contenedor1 .card .box .contentBx div p {
-    color: var(--color-texto);
+    color: var(--background-color);
     font-size: 16px;
 }
 @media (max-width: 1020px){
