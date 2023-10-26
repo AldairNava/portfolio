@@ -7,6 +7,9 @@
     align-items: center;
     flex-wrap: wrap;
 }
+.container2 .subtitulo h2{
+    color: var(--color-texto);
+}
 .container2 .card2 {
     position: relative;
     align-self: flex-end;
@@ -47,11 +50,9 @@
     width: 60px;
     height: 60px;
 }
-.container2 h2{
-    margin-left: 20px;
-    top: 0;
-    font-size: 3vw;
-    color: var(--color-texto);
+.container2 h3{
+    font-size: 2vw;
+    -webkit-text-stroke: 1px var(--color-principal);
 }
 .container2 .card2 .imgBx2 img {
     max-width: 100%;
@@ -73,5 +74,13 @@
     transition-delay: 0.2s;
 }
 @media (max-width: 1150px){
-    
+    .container2{
+        height: 1000px;
+    }
+    .container2 .subtitulo h2{
+        color: var(--color-texto);
+    }
+    .container2 .card2:hover{
+        align-self: center;
+    }
 }

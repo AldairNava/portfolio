@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --background-color:rgb(31,31,33);
+    --color-principal:rgb(0, 225, 255);
+    --color-texto:rgb(255, 255, 255);
+    --color-hover:rgb(125, 176, 243);
+    --color-titulo:rgb(234, 217, 200);
+    --color-morado:rgb(140, 1, 145);
+}
+.container3{
+	width: 1280px;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.container3 .box3{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	overflow: hidden;
+}
+.container3 .box3 .imgBox3{
+	position: relative;
+	overflow: hidden;
+}
+.container3 .box3 .imgBox3 img{
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: center top;
+	transition: 2s;
+	transform: scale(1.2);
+}
+.container3 .box3:hover .imgBox3 img{
+	transform: scale(1);
+}
+.container3 .box3 .details3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #eeeeee;
+	transition: 1s;
+	opacity: 0;
+	filter: blur(10px);
+	transform: scale(1.5);
+}
+.container3 .box3:hover .details3{
+	opacity: 1;
+	filter: blur(0px);
+	transform: scale(1);
+}
+.container3 .box3 .details3 .content3{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	padding: 15px;
+}
+.container3 .box3 .details3 .content3 h2{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	color: #262626;
+}
+.container3 .box3 .details3 .content3 p{
+	margin: 10px 0 0;
+	padding: 0;
+	line-height: 24px;
+	color: #262626;
+}
+@media screen and (max-width: 1266px) {
+	.container3 {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	.container3 .box3 {
+		display: block;
+	}
+}
