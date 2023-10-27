@@ -22,9 +22,9 @@
 }
 body{
     background:
-      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
-       calc(.5*var(--s)) calc(.5*var(--s)*0.577),
-      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+        repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+        calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
     background-size: var(--s) calc(var(--s)*0.577);
 }
 /*Encabezado*/
@@ -198,7 +198,7 @@ header #btn-menu{
         position: fixed;
         right: 0;
         width: 35%;
-        height: 280px;
+        height: 240px;
         flex-direction: column;
         border-bottom: 2px solid var(--color-principal);
         border-left: 2px solid var(--color-principal);

@@ -7,9 +7,6 @@ const contenedor = document.querySelector(".contenedor");
 const btnMenu = document.getElementById("btn-menu");
 const btncv = document.getElementById("btncv")
 
-window.history.replaceState({}, '', window.location.pathname);
-
-
 const responsiveY = ()=>{
     if(window.innerHeight<=362){
         if(menuOpciones.classList.contains("mostrar"))
