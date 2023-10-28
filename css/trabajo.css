@@ -146,23 +146,23 @@
 		justify-content: center;
 	}
 	.container3 .box3 .details3 .content3 h3{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.container3 .box3 .details3 .content3 p{
-		font-size: 8px;
+		font-size: 10px;
 	}
 	.container3 .box3 .details3 .content3 a{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.container3 .subtitulo h2{
 		font-size: 8vw;
 	}
 	.container3 .box3 .details3 .content3 ion-icon{
-		width: 20px;
-		height: 20px;
+		width: 30px;
+		height: 30px;
 	}
 	.container3 .box3 .details3 .content3 svg{
-		width: 20px;
-		height: 20px;
+		width: 30px;
+		height: 30px;
 	}
 }
