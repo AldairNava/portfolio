@@ -117,3 +117,9 @@
         align-self: center;
     }
 }
+@media (max-width: 420px){
+    .container2:hover{
+        height: 1020px;
+        transition: linear .5s;
+    }
+}
