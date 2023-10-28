@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 /*Main*/
+:root{
+    --background-color:rgb(31,31,33);
+    --color-principal:rgb(0, 225, 255);
+    --color-texto:rgb(255, 255, 255);
+    --color-hover:rgb(125, 176, 243);
+    --color-titulo:rgb(234, 217, 200);
+    --color-morado:rgb(140, 1, 145);
+}
 .contenedor1{
     position: relative;
     display: flex;
@@ -108,7 +116,11 @@ svg text {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--color-principal);
+    background:
+        repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+        calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+        repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
     backface-visibility: hidden;
     display: flex;
     border-radius: 50px;
@@ -122,12 +134,13 @@ svg text {
     padding: 20px;
 }
 .contenedor1 .card .box .contentBx div h1 {
-    color: #000000;
+    color: var(--color-texto);
     font-size: 25px;
     letter-spacing: 1px;
+    -webkit-text-stroke: 1px var(--color-principal);
 }
 .contenedor1 .card .box .contentBx div p {
-    color: var(--background-color);
+    color: var(--color-texto);
     font-size: 16px;
 }
 @media (max-width: 1020px){

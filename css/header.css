@@ -111,18 +111,22 @@ header #contacto{
     background-color: var(--color-principal);
     color: var(--color-texto);
     font-size: 15px;
-}
-header #contacto a{
     text-decoration: none;
     color: var(--color-texto);
+    text-align: center;
+    padding-top: 2.5px;
 }
 header #contacto:hover{
     background-color: var(--background-color);
 }
-header #contacto a:hover{
+header #contacto:hover{
     color: var(--color-principal);
 }
-header #btncv{
+header #btncv {
+    padding-top: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-texto);
     border: none;
     cursor: pointer;
     width: 110px;
