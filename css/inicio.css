@@ -100,6 +100,9 @@ svg text {
 .contenedor1 .card:hover .box {
     transform: rotateY(180deg);
 }
+.contenedor1 .card .box .imgBx{
+    background-color: var(--background-color);
+}
 .contenedor1 .card .box .imgBx img {
     position: absolute;
     top: 0;
