@@ -94,19 +94,20 @@ svg text {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: 1s ease;
     align-items: center;
 }
 .contenedor1 .card:hover .box {
     transform: rotateY(180deg);
+    transition: .5s ease;
 }
-.contenedor1 .card .box .imgBx{
-    background-color: var(--background-color);
+.contenedor1 .card:hover .box .imgBx img{
+    z-index: 0;
 }
 .contenedor1 .card .box .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
     height: 100%;
     border-radius: 50px;
@@ -114,7 +115,7 @@ svg text {
     flex: 1;
 }
 .contenedor1 .card .box .contentBx {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
