@@ -51,12 +51,12 @@
 .container3 .box3 .imgBox3 h3{
 	color: var(--color-titulo);
 	-webkit-text-stroke: 1px var(--color-principal);
-	font-size: 3vw;
+	font-size: 6vw;
 	padding-top: 55px;
 }
 .container3 .box3 .imgBox3 p{
 	color: var(--color-titulo);
-	font-size: 1.5vw;
+	font-size: 4vw;
 }
 .container3 .box3 .imgBox4{
 	position: relative;
@@ -76,12 +76,12 @@
 .container3 .box3 .imgBox4 h3{
 	color: var(--color-titulo);
 	-webkit-text-stroke: 1px var(--color-principal);
-	font-size: 3vw;
+	font-size: 6vw;
 	padding-top: 55px;
 }
 .container3 .box3 .imgBox4 p{
 	color: var(--color-titulo);
-	font-size: 1.5vw;
+	font-size: 3vw;
 }
 .container3 .box3:hover .imgBox3 img{
 	transform: scale(1);
@@ -125,6 +125,7 @@
 .container3 .box3 .details3 .content3 p{
 	margin: 10px 0 0;
 	padding: 0;
+	font-size: 1vw;
 	line-height: 24px;
 }
 .container3 .box3 .details3 .content3 a{
